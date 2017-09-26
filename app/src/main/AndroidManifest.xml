@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+package="com.menew.seoul_women_lecture" >
+
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+<uses-permission android:name="android.permission.READ_CALENDAR" />
+<uses-permission android:name="android.permission.WRITE_CALENDAR" />
+
+<application
+    android:allowBackup="true"
+    android:icon="@drawable/icon"
+    android:label="@string/app_name"
+    android:theme="@style/AppTheme" >
+    <activity
+        android:name=".IntroActivity"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar"
+        android:screenOrientation="portrait">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+
+    <activity
+        android:label="서울시 여성 교육 강좌 정보"
+        android:name=".MainActivity"
+        android:theme="@android:style/Theme.NoTitleBar"
+        android:screenOrientation="portrait"/>
+
+    <activity
+        android:label="서울시 여성 교육 강좌 정보"
+        android:name=".ScheduleActivity"
+        android:theme="@android:style/Theme.NoTitleBar"
+        android:screenOrientation="portrait"/>
+
+    <activity
+        android:label="서울시 여성 교육 강좌 정보"
+        android:name=".DetailActivity"
+        android:theme="@android:style/Theme.NoTitleBar"
+        android:screenOrientation="portrait"/>
+
+</application>
+
+</manifest>
